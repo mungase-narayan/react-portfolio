@@ -4,8 +4,11 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { MdOutlinePhone } from "react-icons/md";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
-import { Input } from "@material-tailwind/react";
-
+import { HiOutlineMail } from "react-icons/hi";
+import { CiUser } from "react-icons/ci";
+import { Input } from "antd";
+ 
+const { TextArea } = Input;
 
 const Contacts = () => {
     return (
@@ -55,56 +58,41 @@ const Contacts = () => {
                                 <div class="flex-1">
                                     <label
                                         for="name"
-                                        class="block px-2 text-sm font-medium text-muted-foreground"
+                                        class="block px-1 text-sm font-medium text-muted-foreground"
                                     >
                                         Your Name
                                     </label>
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        class="mt-1 block w-full border border-input rounded-md shadow-sm p-2"
-                                    />
+                                    <Input placeholder="Full Name"
+                                    prefix={<CiUser className=""/>}/>
                                 </div>
                                 <div class="flex-1">
                                     <label
                                         for="email"
-                                        class="block px-2 text-sm font-medium text-muted-foreground"
+                                        class="block px-1 text-sm font-medium text-muted-foreground"
                                     >
                                         Your Email
                                     </label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        class="mt-1 block w-full border border-input rounded-md shadow-sm p-2 invalid:border-pink-500 "
-                                    />
+                                    <Input placeholder="Your Email"
+                                    prefix={<HiOutlineMail/>} />
                                 </div>
                             </div>
                             <div>
                                 <label
                                     for="subject"
-                                    class="block text-sm font-medium px-2 text-muted-foreground"
+                                    class="block text-sm font-medium px-1 text-muted-foreground"
                                 >
                                     Your Subject
                                 </label>
-                                <input
-                                    type="text"
-                                    id="subject"
-                                    class="mt-1 block w-full border border-input rounded-md shadow-sm p-2"
-                                />
+                                <Input placeholder="Your Subject"/>
                             </div>
                             <div>
                                 <label
                                     for="message"
-                                    class="block text-sm font-medium px-2 text-muted-foreground"
+                                    class="block text-sm font-medium px-1 text-muted-foreground"
                                 >
                                     Message
                                 </label>
-                                <textarea
-                                    id="message"
-                                    rows="4"
-                                    class="mt-1 block w-full border border-input rounded-md shadow-sm p-2"
-                                    placeholder="Write here your message"
-                                ></textarea>
+                                <TextArea rows={4} placeholder="Write here your massage" maxLength={6} />
                             </div>
                             <Button className=" py-4">
                                 <h1> Send Message</h1>
