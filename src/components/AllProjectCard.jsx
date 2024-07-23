@@ -16,7 +16,7 @@ const AllProjectCard = () => {
                     width: 240,
                     height: 350,
                 }}
-                className=" hover:"
+                className=" transform transition-transform hover:scale-105"
                 cover={
                     <img
                         alt="example"
@@ -46,6 +46,7 @@ const AllProjectCard = () => {
                     width: 240,
                     height: 350,
                 }}
+                className="transition-transform hover:scale-105"
                 cover={
                     <img
                         alt="example"
@@ -74,6 +75,7 @@ const AllProjectCard = () => {
                     width: 240,
                     height: 350,
                 }}
+                className="transition-transform hover:scale-105"
                 cover={
                     <img
                         alt="example"
@@ -102,6 +104,7 @@ const AllProjectCard = () => {
                     width: 240,
                     height: 350,
                 }}
+                className="transition-transform hover:scale-105"
                 cover={
                     <img
                         alt="example"
@@ -133,6 +136,7 @@ const AllProjectCard = () => {
                     width: 240,
                     height: 350,
                 }}
+                className="transition-transform hover:scale-105"
                 cover={
                     <img
                         alt="example"
@@ -162,6 +166,7 @@ const AllProjectCard = () => {
                     width: 240,
                     height: 350,
                 }}
+                className="transition-transform hover:scale-105"
                 cover={
                     <img
                         alt="example"
@@ -190,6 +195,7 @@ const AllProjectCard = () => {
                     width: 240,
                     height: 350,
                 }}
+                className="transition-transform hover:scale-105"
                 cover={
                     <img
                         alt="example"
@@ -218,6 +224,7 @@ const AllProjectCard = () => {
                     width: 240,
                     height: 350,
                 }}
+                className="transition-transform hover:scale-105"
                 cover={
                     <img
                         alt="example"

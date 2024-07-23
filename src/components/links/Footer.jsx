@@ -33,7 +33,7 @@ const SocialIcon = ({ alt, src }) => (
 const Footer = () => {
   return (
     <div className={`bg-card bg-slate-100 ${sharedClasses.textMuted} py-8`}>
-      <div className={sharedClasses.container}>
+      {/* <div className={sharedClasses.container}>
         <div className={sharedClasses.spaceY8}>
           <div className={`${sharedClasses.flexCenter} ${sharedClasses.spaceX6} ${sharedClasses.mb6}`}>
             {socialIcons.map((icon, index) => (
@@ -82,7 +82,7 @@ const Footer = () => {
             <p>© 2024 G/O Media Inc.</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

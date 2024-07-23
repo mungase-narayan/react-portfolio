@@ -61,17 +61,6 @@ const Header = () => {
                                     Projects
                                 </li>
                             </NavLink>
-
-                            <NavLink to={"/work"}>
-                                <li
-                                    className={`font-mono hover:text-blue-300 cursor-pointer ${
-                                        pathname === "/work" && "text-blue-300"
-                                    } `}
-                                >
-                                    Work
-                                </li>
-                            </NavLink>
-
                             <NavLink to={"/contacts"}>
                                 <li
                                     className={`font-mono hover:text-blue-300 cursor-pointer ${
